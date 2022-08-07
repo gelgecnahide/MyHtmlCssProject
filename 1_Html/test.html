@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+
+
+
+    <style>
+        /*
+             SELECTOR {PROPERTY : VALUE}
+             class (.) can be used more than once in a page
+        */
+
+        p {
+            front-size: 2em;
+            color: red;
+        }
+
+        p:hover {
+            color: brown;
+        }
+
+        .change {
+            background-color: aqua;
+        }
+
+        .change:hover {
+            text-decoration: underline;
+        }
+
+
+        #moveFirst {
+            text-align: right;
+        }
+
+        .bolder {
+            font-weight: bolder;
+        }
+    </style>
+
+    <link rel="stylesheet" href="main.css">
+    <!--- last line is the dominant -->
+
+</head>
+
+<body>
+
+    <!--- <OPENNING TAG ATTRIBUTE="PROPERTY">  </CLOSING TAG> -->
+
+    <p id="moveFirst" class="change">Regular Paragraph</p>
+    <p style="color: gray" id="moveSecond">Regular Paragraph</p>
+    <p>Regular Paragraph</p>
+    <p class="change bolder">Regular Paragraph</p>
+    <!--- cooll adding tqo class names -->
+    <p>Regular Paragraph</p>
+</body>
+
+</html>

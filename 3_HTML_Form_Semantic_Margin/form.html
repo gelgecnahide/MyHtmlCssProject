@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+
+<body>
+    <!-- Actio: is the page where collected values will be handled 
+         Method: get / post | get is not secure, but the post is the secure one
+                 get enables bookmarking the page with the given details/values
+                 post cannot bookmarked with values
+         Name: identify the 
+    -->
+    <form action="result.html" method="get" name="myform">
+        <!--  
+        select>option*4
+        -->
+        <label for="fruits">Fruits: </label>
+        <select name="fruits" id="fruits" multiple size="3">
+            <optgroup label="yellow">
+                <option value="Grapes" disabled>Lemon</option>
+                <option value="Orange">Orange</option>
+                <option value="Banana">Banana</option>
+            </optgroup>
+            <optgroup label="other">
+                <option value="Apple">Apple</option>
+                <option value="Grapes">Grapes</option>
+                <option value="Grapes" selected>Mango</option>
+            </optgroup>
+        </select>
+
+        <br><br><br>
+        <label for="comment">Comment:</label>
+        <textarea style="resize: none;" name="comment" id="comment" cols="30" rows="30" maxlength="25"
+            placeholder="Share your comment">HERE</textarea>
+
+        <br><br><br>
+
+        <label for="browser">browsers:</label>
+        <input name="browser" id="browser" type="text" list="browsers">
+        <datalist id="browsers">
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+            <option value="IE"></option>
+        </datalist>
+
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="fname">First Name</label> <br>
+            <input type="text" name="fname" id="fname" value="Ethan"> <br>
+            <label for="lname">Last Name</label> <br>
+            <input type="text" name="lname" id="lname" value="Specter"> <br>
+
+        </fieldset>
+
+
+        <hr>
+        <!-- placeholder="share your comment"></textarea> -->
+        <input type="submit" value="SubMit">
+    </form>
+
+</body>
+
+</html>

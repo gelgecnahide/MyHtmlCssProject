@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <!-- form attributes -->
+    <!-- Action: server url -->
+    <!-- Method: GET (non sensitive data), POST (long or sensitive data) -->
+    <form method="POST" action="http://www.test.com">
+
+        <label>
+            Username:
+            <input name="username" type="text" size="10" maxlength="8">
+            <!-- size is the width of the input box, max length how many character you can type -->
+        </label>
+        <label for="password">Password</label>
+        <input name="password" type="password" id="password"> <br />
+
+        <!-- <form action="https://www.test.com"> -->
+        <!-- to send the data to server provide action -->
+        User First Name: <input name="fName"> <br />
+        User Last Name: <input name="lName"><br />
+        User Age: <input name="age"><br />
+
+        <!-- Radio Input -->
+        <input type="radio" name="gender" value="male" checked>Male <br />
+        <!-- checked means that option is selected by default -->
+        <input type="radio" name="gender" value="female">Female <br />
+        <!-- since name value is the same, it only lets us select one option -->
+        <input type="radio" name="gender" value="other">Other <br />
+
+        <!-- checkbox -->
+        <p> Which day are you busy?</p>
+        <input type="checkbox" name="days" value="Monday" checked> monday <br />
+        <input type="checkbox" name="days" value="Tuesday"> Tuesday <br />
+        <input type="checkbox" name="days" value="Wednesday"> Wednesday <br />
+        <input type="checkbox" name="days" value="Thursday"> Thursday <br />
+
+        <!-- Number -->
+        <p> What is your age?</p>
+        <input type="number" name="age" placeholder="Enter your age" min="12" max="65" step="0.1"> <br /> <br />
+        <!-- when we give number as type then you can see up and down arrow in the input box -->
+
+        <!-- search -->
+        <input type="search" name="search" maxlength="10" minlength="5"> <br> <br>
+
+        <input type="color" name="color"> Choose Your Color <br>
+
+        <label for="date">Your Date</label>
+        <input type="date" id="date" value="2018-07-22" min="2018-01-01" max="2018-12-31"> <br> <br>
+
+
+        <input type="email" name="email"> <br>
+        <input type="file" name="myfile"> <br>
+        <input type="tel" name="tel" required> <br>
+        <!-- cool required -->
+
+        <input type="reset" value="reset"> <br /> <br />
+        <button>Submit</button> <br /> <br />
+        <input type="submit" value="Submit"> <br /> <br />
+
+
+
+
+
+    </form>
+</body>
+
+</html>

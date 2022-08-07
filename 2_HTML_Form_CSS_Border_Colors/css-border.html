@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders</title>
+
+    <style>
+        #mix {
+            /* 4 values => top right bottom left */
+            border-style: solid dashed dotted double;
+            border-color: green red blue pink;
+            /* 2 values => top/bottom  right/left*/
+            background-color: green blue;
+            /* 3 values => top right/left bottom*/
+            border-color: green red blue;
+
+            /* shorthand */
+            border: red 5px solid;
+            border: 2px blue double;
+            /* order is not a big deal */
+            border-bottom: green 2px dashed
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 15px;
+            border-radius: 5px 10px 20px 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <p style="border-style: solid; border-color: red; border-width: 20px;"> This paragraph has a solid border</p>
+    <p style="border-style: dashed; border-color: blue"> This paragraph has a dashed border</p>
+    <p style="border-style: dotted; border-color: green"> This paragraph has a dotted border</p>
+    <p style="border-style: groove"> This paragraph has a groove border</p>
+    <p style="border-style: inset"> This paragraph has a inset border</p>
+    <p style="border-style: outset"> This paragraph has a outset border</p>
+
+    <p id="mix">This is a paragraph</p>
+
+    <div id="box">
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana;
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: red;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    color: antiquewhite;
+    border: 10px solid antiquewhite;
+    padding: 10px 15px;
+    display: inline-block;
+    /* border-radius: 50%; */
+    border-radius: 39px;
+    /* 10 border + 10 padding 19 half */
+
+}
+
+nav.main-nav {
+    background-color: rgb(177, 92, 92);
+    padding: 20px;
+    position: sticky;
+    top: 118px;
+}
+
+/* check not working */
+
+
+
+nav.main-nav ul {
+    text-align: center;
+    width: 100%
+}
+
+nav.main-nav ul li {
+    display: inline-block;
+    width: 23%
+}
+
+nav.main-nav ul li a {
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.main-nav ul li a:link {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.main-nav ul li a:visited {
+    color: gray;
+}
+
+nav.main-nav ul li a:hover {
+    color: green;
+}
+
+nav.main-nav ul li a:active {
+    color: black;
+}
+
+
+main {
+    background-color: rgb(87, 87, 13);
+    padding: 0 40px;
+}
+
+
+
+main ul {
+    width: 100%
+}
+
+main ul li {
+    display: inline-block;
+    width: 40%;
+    margin: 0px 3%;
+    text-align: right;
+}
+
+main ul li img {
+    width: 70%;
+}
+
+/* .join {
+    background-color: bisque;
+} */
+section.join {
+    padding: 10px 40px;
+}
+
+section form input [type='email'] {
+    border-radius: 5px 20px;
+}
+
+section form {
+    padding: 15px;
+    text-align: center;
+}
+
+section form input {
+    font-size: 24px;
+    padding: 15px;
+    border: 2px dashed gray;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(190, 72, 72);
+    font-size: 1.5rem;
+}
